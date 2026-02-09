@@ -5,3 +5,10 @@
 Hello, John!
 안녕하세요, 이영희님! 좋은 하루 되세요!
 '''
+
+def hello(name, msg=""):
+    print(f"안녕하세요, {name}님!{(' ' + msg) if msg else ''}")
+
+hello("김철수")
+print("Hello, John!")
+hello("이영희", "좋은 하루 되세요!")

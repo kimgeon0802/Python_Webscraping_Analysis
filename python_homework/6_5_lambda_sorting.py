@@ -6,3 +6,18 @@
 점수순 정렬: [('박민수', 78), ('김철수', 85), ('이영희', 92), ('최수진', 95)]
 점수 내림차순: [('최수진', 95), ('이영희', 92), ('김철수', 85), ('박민수', 78)]
 '''
+
+stu = [('김철수', 85), ('이영희', 92), ('박민수', 78), ('최수진', 95)]
+print(f"학생 정보: {stu}")
+
+# 이름순 정렬 (오름차순)
+name = sorted(stu, key=lambda x: x[0])
+print(f"이름순 정렬: {name}")
+
+# 점수순 정렬 (오름차순)
+score = sorted(stu, key=lambda x: x[1])
+print(f"점수순 정렬: {score}")
+
+# 점수 내림차순 정렬
+score_desc_ = sorted(stu, key=lambda x: x[1], reverse=True)
+print(f"점수 내림차순: {score_desc_}")

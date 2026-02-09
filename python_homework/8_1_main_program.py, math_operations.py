@@ -6,3 +6,14 @@
 팩토리얼 5! = 120
 최대공약수(48, 18) = 6
 '''
+import testmodule
+
+cir_ = 5
+rect_w, rect_h = 10, 5
+fac_ = 5
+num1, num2 = 48, 18
+
+print(f"원의 넓이: {testmodule.cir(cir_):.2f}")
+print(f"직사각형 넓이: {testmodule.rec(rect_w, rect_h)}")
+print(f"팩토리얼 {fac_}! = {testmodule.fac(fac_)}")
+print(f"최대공약수({num1}, {num2}) = {testmodule.gcd(num1, num2)}")

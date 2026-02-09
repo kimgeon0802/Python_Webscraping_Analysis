@@ -6,3 +6,11 @@
 10 * 5 = 50
 10 / 5 = 2.0
 '''
+
+number1 = 10
+number2 = 5
+
+print(f'{number1} + {number2} = {number1+number2}')
+print(f'{number1} - {number2} = {number1-number2}')
+print(f'{number1} * {number2} = {number1*number2}')
+print(f'{number1} / {number2} = {number1/number2}')

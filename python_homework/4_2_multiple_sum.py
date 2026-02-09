@@ -5,3 +5,15 @@
 3의 배수의 합: 1683
 3의 배수의 개수: 33개
 '''
+
+list_ = [i for i in range(1,101)]
+three_list = []
+sum = 0
+for i in list_:
+    if i % 3 == 0:
+        three_list.append(i)
+        sum += i
+
+print(f'1부터 100까지 3의 배수: {three_list}')
+print(f'3의 배수의 합: {sum}')
+print(f'3의 배수의 개수: {len(three_list)}')

@@ -6,4 +6,13 @@
 '''
 s_dict = {"A":90, "B":80, "C":70, "D":60}
 a = input("점수를 입력하세요: ")
+sc_a = int(a)
 
+for key_, val_ in s_dict.items():
+    if sc_a >= val_:
+        sc = key_
+        break
+    else:
+        sc = "F"
+
+print(f'점수 {sc_a}점의 학점은 {sc}입니다.')

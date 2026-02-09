@@ -11,3 +11,22 @@
 파이썬 파일 처리를 연습하고 있습니다
 오늘은 좋은 날씨입니다
 '''
+
+texts = [
+    "안녕하세요",
+    "파이썬 파일 처리를 연습하고 있습니다",
+    "오늘은 좋은 날씨입니다"
+]
+
+print("파일에 저장할 내용:")
+for text in texts:
+    print(text)
+
+with open("data/test.txt", "w", encoding="utf-8") as f:
+    for text in texts:
+        f.write(text + "\n")
+
+print("\n파일에서 읽어온 내용:")
+with open("data/test.txt", "r", encoding="utf-8") as f:
+    for text in f:
+        print(text.strip())

@@ -6,3 +6,13 @@
 하이픈으로 연결: Python-is-awesome-programming-language
 대문자로 변환 후 공백으로 연결: PYTHON IS AWESOME PROGRAMMING LANGUAGE
 '''
+
+str_ = "Python is awesome programming language"
+str_list = str_.split(" ")
+hstr = "-".join(str_list)
+rstr = str_.upper()
+
+print(f'원본 문자열: {str_}')
+print(f'분리된 단어들: {str_list}')
+print(f'하이픈으로 연결: {hstr}')
+print(f'대문자로 변환 후 공백으로 연결: {rstr}')
