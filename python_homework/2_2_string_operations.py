@@ -6,3 +6,11 @@
 소문자: hello world
 문자열 길이: 11
 '''
+
+def sol(stri):
+    print(f'대문자 : {str.upper(stri)}')
+    print(f'소문자 : {str.lower(stri)}')
+    print(f'문자열 길이 : {len(stri)}')
+
+stri_ = input("문자열을 입력하세요: ")
+sol(stri_)

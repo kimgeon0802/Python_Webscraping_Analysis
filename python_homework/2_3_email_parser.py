@@ -5,3 +5,11 @@
 사용자명: user
 도메인: example.com
 '''
+
+def sol(stri):
+    stri_list = stri.split("@")
+    print(f'사용자명: {stri_list[0]}')
+    print(f'도메인: {stri_list[1]}')
+
+stri_ = input("이메일 주소를 입력하세요: ")
+sol(stri_)

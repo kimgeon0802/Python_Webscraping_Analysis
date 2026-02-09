@@ -8,3 +8,11 @@
 최수진: 95점
 평균 점수: 87.5점
 '''
+sc_dic = {'김철수':85, '이영희':92, '박민수':78, '최수진':95}
+print("학생 성적:")
+sum = 0
+for key_, val_ in sc_dic.items():
+    print(f'{key_}: {val_}점')
+    sum += val_
+
+print(f'평균점수: {sum/len(sc_dic)}점')
